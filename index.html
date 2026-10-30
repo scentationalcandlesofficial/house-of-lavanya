@@ -189,28 +189,22 @@ footer a{color:var(--ink);text-decoration:none;border-bottom:1px dotted var(--go
 .wabar{position:fixed;bottom:16px;right:16px;z-index:50;background:var(--green);color:#fff;border-radius:50%;width:54px;height:54px;display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:0 4px 14px rgba(0,0,0,.25);text-decoration:none}
 .nores{text-align:center;color:var(--muted);font-style:italic;padding:34px 0}
 
-/* ---- all-green ambience (HOL_PAGES=green): bottle-green pages, ivory text, brass accents; photos untouched ---- */
-:root{--paper:#1E3A33;--cream:#24453C;--line:#3E6457;--muted:#B9C6BC;--gold:#C9AE7E;--pricebg:#B48A4C;--salebg:#3B2A22;--rust:#D08463;--green:#2F7A4F}
-body{color:#F4EFE6}
-.toolbar{background:rgba(30,58,51,.96);border-bottom-color:#3E6457}
-.search,.favbtn,.chip,select.price,.tier,.qtystep button,.formfield input,.formfield textarea,.togglerow button,details,.btn.fv,.heart,.wsgate-box input{background:#24453C;color:#F4EFE6;border-color:#4C7366}
-.search input{color:#F4EFE6}.search input::placeholder,.formfield input::placeholder,.formfield textarea::placeholder{color:#9DB0A3}
-.chip.active,.tier.active,.togglerow button.active{background:#B48A4C;border-color:#B48A4C;color:#1E3A33}
-.tier.active .t,.tier.active .p{color:#1E3A33}
-.card{background:#24453C!important;border-color:#3E6457!important}
-.cardbody .pr,.minfo .pr{background:#B48A4C;color:#1E3A33}
-.pr.onsale{background:#3B2A22;color:#E8A07F}
-.sheet{background:#1E3A33}
-.fragcard{background:#24453C;border-color:#3E6457}
-.fragsec{background:#173029}
-details .body b,footer a,footer .c{color:#F4EFE6}
-footer{background:#173029;border-top:2px solid #B48A4C}
-.salebanner{color:#fff}
-.heart{color:#C9AE7E}.heart.on{color:#F4EFE6;border-color:#B48A4C;background:#2F5D4C}
-.btn.fv{color:#F4EFE6;border-color:#B48A4C}.btn.fv.on{background:#2F5D4C}
-.dot{background:#3E6457}
-.wsgate{background:#1E3A33}
-.wsgate-box button{background:#B48A4C;color:#1E3A33}
+/* ---- gallery look (HOL_PAGES=gallery, approved Oct 2026): warm ivory paper, green header & footer,
+   brass arches with a soft shadow, green price tags; photos untouched ---- */
+:root{--paper:#F9F5EC;--pricebg:#1E3A33}
+body{background-color:#F9F5EC;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .27 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+.toolbar{background:rgba(249,245,236,.96)}
+.card{background:#FFFCF6!important;border-color:#E6DCC8!important;box-shadow:0 6px 16px rgba(95,82,60,.10)}
+.card img{filter:drop-shadow(0 6px 9px rgba(95,82,60,.22))}
+.cardbody .pr,.minfo .pr{background:#1E3A33;color:#F4EFE6}
+.pr.onsale{background:#F7E4DC;color:#A6624B}
+.chip,.search,.favbtn,select.price{background:#FFFCF6}
+.chip.active{background:#1E3A33;border-color:#1E3A33;color:#F4EFE6}
+.fragsec{background:#F2ECDF}
+.fragcard{background:#FFFCF6}
+footer{background:#1E3A33;border-top:3px solid #B48A4C;color:#F4EFE6}
+footer .lbl{color:#C9AE7E}
+footer a,footer .c{color:#F4EFE6}
 </style>
 </head>
 <body>
